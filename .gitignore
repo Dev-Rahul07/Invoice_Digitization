@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# SQLite databases (generated at runtime, not committed)
+*.db
+*.sqlite3
+
+# Pytest cache & test results
+.pytest_cache/
+.coverage
+htmlcov/

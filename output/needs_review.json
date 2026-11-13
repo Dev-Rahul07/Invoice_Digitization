@@ -1,0 +1,26 @@
+[
+  {
+    "source_filename": "invoice-103-review.png",
+    "validation_status": "needs_review",
+    "review_reasons": [
+      "Missing or invalid invoice date (expected YYYY-MM-DD)",
+      "Math mismatch: Subtotal (1000.00) + Tax (180.00) = 1180.00, but Total is 1170.00 (discrepancy of 1000 minor units)"
+    ],
+    "missing_or_ambiguous_fields": [
+      "invoice_date"
+    ],
+    "extracted_values": {
+      "invoice_number": "TNM-103",
+      "vendor": "Gamma Paper Co",
+      "invoice_date": null,
+      "currency": "INR",
+      "subtotal": 1000.0,
+      "tax": 180.0,
+      "total": 1170.0,
+      "subtotal_minor": 100000,
+      "tax_minor": 18000,
+      "total_minor": 117000
+    },
+    "processed_at": "2026-11-13T20:32:07.885869"
+  }
+]

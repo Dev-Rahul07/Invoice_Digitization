@@ -1,0 +1,91 @@
+[
+  {
+    "source_filename": "invoice-101-copy.png",
+    "validation_status": "valid",
+    "duplicate_status": "original",
+    "invoice_id": 1,
+    "extracted_fields": {
+      "invoice_number": "TNM-101",
+      "vendor": "ACME OFFICE SUPPLIES",
+      "invoice_date": "2026-10-01",
+      "currency": "INR",
+      "subtotal": 1200.5,
+      "tax": 216.09,
+      "total": 1416.59,
+      "subtotal_minor": 120050,
+      "tax_minor": 21609,
+      "total_minor": 141659
+    },
+    "review_reason": null,
+    "review_reasons": [],
+    "processed_at": "2026-11-13T20:32:07.838100"
+  },
+  {
+    "source_filename": "invoice-101.png",
+    "validation_status": "valid",
+    "duplicate_status": "duplicate_scan",
+    "invoice_id": 1,
+    "extracted_fields": {
+      "invoice_number": "TNM-101",
+      "vendor": "Acme Office Supplies",
+      "invoice_date": "2026-10-01",
+      "currency": "INR",
+      "subtotal": 1200.5,
+      "tax": 216.09,
+      "total": 1416.59,
+      "subtotal_minor": 120050,
+      "tax_minor": 21609,
+      "total_minor": 141659
+    },
+    "review_reason": "Duplicate scan of existing invoice ID 1 (key: acme office supplies_TNM-101)",
+    "review_reasons": [
+      "Duplicate scan of existing invoice ID 1 (key: acme office supplies_TNM-101)"
+    ],
+    "processed_at": "2026-11-13T20:32:07.855007"
+  },
+  {
+    "source_filename": "invoice-102.png",
+    "validation_status": "valid",
+    "duplicate_status": "original",
+    "invoice_id": 2,
+    "extracted_fields": {
+      "invoice_number": "TNM-102",
+      "vendor": "Beta Print Studio",
+      "invoice_date": "2026-10-02",
+      "currency": "INR",
+      "subtotal": 1500.0,
+      "tax": 270.0,
+      "total": 1770.0,
+      "subtotal_minor": 150000,
+      "tax_minor": 27000,
+      "total_minor": 177000
+    },
+    "review_reason": null,
+    "review_reasons": [],
+    "processed_at": "2026-11-13T20:32:07.874955"
+  },
+  {
+    "source_filename": "invoice-103-review.png",
+    "validation_status": "needs_review",
+    "duplicate_status": "original",
+    "invoice_id": null,
+    "extracted_fields": {
+      "invoice_number": "TNM-103",
+      "vendor": "Gamma Paper Co",
+      "invoice_date": null,
+      "currency": "INR",
+      "subtotal": 1000.0,
+      "tax": 180.0,
+      "total": 1170.0,
+      "subtotal_minor": 100000,
+      "tax_minor": 18000,
+      "total_minor": 117000
+    },
+    "review_reason": "Missing or invalid invoice date (expected YYYY-MM-DD); Math mismatch: Subtotal (1000.00) + Tax (180.00) = 1180.00, but Total is 1170.00 (discrepancy of 1000 minor units)",
+    "review_reasons": [
+      "Missing or invalid invoice date (expected YYYY-MM-DD)",
+      "Math mismatch: Subtotal (1000.00) + Tax (180.00) = 1180.00, but Total is 1170.00 (discrepancy of 1000 minor units)"
+    ],
+    "processed_at": "2026-11-13T20:32:07.885869"
+  }
+]
