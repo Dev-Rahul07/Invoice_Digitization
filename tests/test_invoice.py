@@ -10,7 +10,14 @@ Tests all required acceptance criteria using fixed OCR text fixtures and pure fu
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
+
+# Ensure project root is in sys.path so 'python tests/test_invoice.py' works directly
+root_dir = Path(__file__).resolve().parent.parent
+if str(root_dir) not in sys.path:
+    sys.path.insert(0, str(root_dir))
+
 import pytest
 
 from src.database import (
@@ -306,3 +313,7 @@ def test_corrupted_image_handling(tmp_path: Path) -> None:
     assert counts["valid_invoices_stored"] == 0
 
     conn.close()
+
+
+if __name__ == "__main__":
+    sys.exit(pytest.main(["-v", __file__]))
